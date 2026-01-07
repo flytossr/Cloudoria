@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Cloudoria</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <p>
+    <strong>Mi Página Web Cloudoria</strong><br>
+    <a href="#inicio">Inicio</a> |
+    <a href="#sobre-mi">Sobre la empresa</a> |
+    <a href="#contacto">Contacto</a>
+  </p>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Intro -->
+    <section class="intro" id="inicio">
+      <header>
+        <h1>Cloudoria</h1>
+        <p>Creado por: <a href="#">Yuen Gao</a></p>
+        <ul class="actions">
+          <li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <span class="image fill" data-position="center"><img src="images/tecnico3.png" alt="" /></span>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section id="Sobre-mi">
+      <header>
+        <h2>Quienes somos?</h2>
+      </header>
+      <div class="content">
+        <p><strong>Somos una pequeña empresa llamada Cloudoria formada por tres tecnicos que se dedica a reparar todo tipo de dispositivos eletronicos. Trabajamos desde dispositivos mobiles, como teléfonos y tabletas, hasta patinetes eletronicos y otros aparatos que necesitan mantenimiento o arreglo. Nos esforzamos por ofrecer un servicio cercano, rápido y de confianza, poniendo toda nuestra experiencia y dedicación en cada reparación para que los dispositivos de nuestros clientes vuelvan a funcionar como nuevos.</strong> </p>
+        <span class="image main"><img src="images/Icono" alt="" /></span>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section>
+      <header>
+        <h2>Precios</h2>
+      </header>
+      <div class="content">
+        <button onclick="mostrarPrecios()">Mostrar / Ocultar más información</button>
+        <div id="infoPrecios" style="display: none; margin-top: 10px;">
+          <p>
+           En nuestra empresa reparamos todo tipos de dispositivos eletronico desde mobil hasta portatil. 
+           El precio puede variar segun la parte del dispositivo que este dañado, 
+           ya que no es lo mismo una pantalla rota que sustituir una bateria o cambiar el chasis
+          </p>
+        </div> 
+        <ul class="feature-icons">
+          <li class="icon solid fa-laptop">50-150€</li>
+          <li class="icon solid fa-mobile">20-80€</li>
+          <li class="icon solid fa-tablet">20-92€</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section -->
+    <section>
+      <header>
+        <h2>Ubicacion y informacion</h2>
+      </header>
+      <div class="content">
+        <p><strong></strong></p>
+        <ul class="feature-icons">
+          <li class="icon solid fa-map-pin">Cerca de Ronda del General Mite</li>
+          <li class="icon solid fa-phone">612334568</li>
+        </ul>
+
+        <!-- Section -->
+        <section>
+          <div class="content">
+            <div class="gallery">
+              <a href="images/reparacion2.jpg" title="reparaciones" class="landscape"><img src="images/reparacion2.jpg" alt="" /></a>
+            </div>
+          </div>
+        </section>
+
+    <!-- Section -->
+    <section id="contacto">
+      <header>
+        <h2>Contactate con nosotros</h2>
+      </header>
+      <div class="content">
+        <form action="processa.php" method="post">
+          <div class="fields">
+            <div class="field half">
+              <input type="text" name="name" id="name" placeholder="Name" />
+            </div>
+            <div class="field half">
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <div class="field">
+              <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Send Message" class="button primary" /></li>
+          </ul>
+        </form>
+      </div>
+      <footer>
+        <ul class="items">
+          <li>
+            <h3>Email</h3>
+            <a href="#">Grupo5@stucom.com</a>
+          </li>
+          <li>
+            <h3>Número</h3>
+            <a href="#">612334568</a>
+          </li>
+          <li>
+            <h3>Ubicacion</h3>
+            <span>Ronda del General Mite</span>
+          </li>
+        </ul>
+      </footer>
+    </section>
+
+  </div> <!-- End wrapper -->
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function mostrarPrecios() {
+      var info = document.getElementById("infoPrecios");
+      if (info.style.display === "none") {info.style.display = "block";}
+      else {info.style.display = "none";}
+    }
+  </script>
+</body>
+</html>
